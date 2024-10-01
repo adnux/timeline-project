@@ -1,0 +1,15 @@
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item:last-child .timeline-circle {
+  background-color: DodgerBlue;
+  border-color: DodgerBlue;
+}
+
+.timeline-item:last-child .timeline-line::before {
+  bottom: 15px;
+}

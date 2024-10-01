@@ -1,0 +1,28 @@
+.timeline-content {
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #212529;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.timeline-content input {
+  font-size: 14px;
+  width: 250px;
+  padding: 4px;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+}
+
+.timeline-content button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
