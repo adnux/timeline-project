@@ -1,8 +1,8 @@
 import React from 'react';
+import { useZoomControls } from '../../hooks/UseZoomControls';
 import { EventItem } from '../../types/Timeline';
 import './Timeline.css';
 import TimelineItem from './TimelineItem';
-import { useZoomControls } from '../../hooks/UseZoomControls';
 
 interface TimelineProps {
     items: Array<EventItem>;

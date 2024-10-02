@@ -26,6 +26,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item }) => {
         <div
             aria-valuetext={item.start}
             aria-valuemax={item.id}
+            aria-label="timeline-item"
             className="timeline-item"
             draggable
             onDragStart={handleDragStart}

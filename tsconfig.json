@@ -20,7 +20,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@/tl/*": ["./src/*"]
     }
   },
   "include": [

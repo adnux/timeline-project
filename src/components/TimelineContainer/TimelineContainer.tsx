@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ZoomControlsContextProvider from '../../providers/ZoomControlsContextProvider';
 import { EventItem } from '../../types/Timeline';
 import Timeline from '../Timeline/Timeline';
-import './TimelineContainer.css';
 import ZoomControls from '../ZoomControls/ZoomControls';
-import ZoomControlsContextProvider from '../../providers/ZoomControlsContextProvider';
-import TimelineContextProvider from '../../providers/TimelineContextProvider';
+import './TimelineContainer.css';
 
 function sortEvents(items: EventItem[]) {
     return [...items].sort((a, b) => {
@@ -24,8 +23,8 @@ const TimelineContainer: React.FC<TimelineProps> = ({ items }) => {
     return (
         <div className="timeline-container">
             <ZoomControlsContextProvider>
-                <ZoomControls/>
-                <Timeline items={sortEvents(items)}/>
+                <ZoomControls />
+                <Timeline items={sortEvents(items)} />
             </ZoomControlsContextProvider>
         </div>
     );
